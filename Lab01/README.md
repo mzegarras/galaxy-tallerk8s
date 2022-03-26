@@ -66,32 +66,32 @@
 * [Official documentation](https://docs.docker.com/compose/compose-file/)
   
 
-    ```bash
-    docker run -d -p 8080:80 nginx:alpine
-    docker run -d -p 8081:80 nginx:alpine
-    ```
+  ```bash
+  docker run -d -p 8080:80 nginx:alpine
+  docker run -d -p 8081:80 nginx:alpine
+  ```
 
-    ```YAML
-    version: '3.8'
-    services:
-      nginx:
-        image: nginx:alpine
-        ports:
-          - 8080:80
-    ```
+  ```YAML
+  version: '3.8'
+  services:
+    nginx:
+      image: nginx:alpine
+      ports:
+        - 8080:80
+  ```
 
-    ```YAML
-    version: '3.8'
-    services:
-      nginxa:
-        image: nginx:alpine
-        ports:
-          - 8080:80
-      nginxb:
-        image: nginx:alpine
-        ports:
-          - 8081:80          
-    ```
+  ```YAML
+  version: '3.8'
+  services:
+    nginxa:
+      image: nginx:alpine
+      ports:
+        - 8080:80
+    nginxb:
+      image: nginx:alpine
+      ports:
+        - 8081:80          
+  ```
 
     ```sh
     docker-compose up
