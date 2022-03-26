@@ -50,8 +50,8 @@
     ```
 
 
-1. docker-compose
-https://docs.docker.com/compose/cli-command/
+1. docker-compose (https://docs.docker.com/compose/cli-command/)
+
 
     ```console
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.3.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
