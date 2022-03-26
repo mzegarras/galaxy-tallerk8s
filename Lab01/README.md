@@ -1,4 +1,6 @@
-1. Crear containers 1
+# Docker compose
+
+## Crear containers 1
 
     ```bash
     docker run -d -p 8080:80 nginx:alpine
@@ -7,7 +9,7 @@
     docker run -d -p 8083:80 nginx:alpine
     ```
 
-1. Crear containers 2
+## Crear containers 2
 
     ```
     docker run -d nginx
@@ -17,25 +19,25 @@
     docker run -d -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3306:3306 mysql:5.7
     ```
 
-1. Listar containers
+## Listar containers
     ```
     docker ps -a
     docker ps -aq
     ```
 
-1. Iniciar y detener containers
+## Iniciar y detener containers
     ```
     docker stop a1051285c4ab
     docker start a1051285c4ab
     ```
 
-1. Eliminar containers
+## Eliminar containers
     ```
     docker rm a1051285c4ab -f
     ```
 
 
-1. Mongo - mongo-express
+## Mongo - mongo-express
     ```
     docker run --name mongodb -e MONGO_INITDB_ROOT_USERNAME=root \
         -e MONGO_INITDB_ROOT_PASSWORD=pwd1234 \
