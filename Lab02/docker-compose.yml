@@ -62,9 +62,9 @@ services:
 
   lab01:
     image: "mzegarra/lab01sut:1.0.0"
-    build:
-      context: lab01
-      dockerfile: ./src/main/docker/Dockerfile
+    # build:
+    #   context: lab01
+    #   dockerfile: ./src/main/docker/Dockerfile
     # deploy:
     #   mode: replicated
     #   replicas: 2
@@ -86,9 +86,9 @@ services:
 
   lab02:
     image: "mzegarra/lab02sut"
-    build:
-      context: lab02
-      dockerfile: ./src/main/docker/Dockerfile    
+    # build:
+    #   context: lab02
+    #   dockerfile: ./src/main/docker/Dockerfile    
     environment:
       SERVER_CONFIG_ENABLED: "true"
       SERVER_CONFIG_URL: "http://configserver:8888"
@@ -104,9 +104,9 @@ services:
 
   lab05:
     image: "mzegarra/lab05sut:latest"
-    build:
-      context: lab05
-      dockerfile: ./src/main/docker/Dockerfile   
+    # build:
+    #   context: lab05
+    #   dockerfile: ./src/main/docker/Dockerfile   
     environment:
       SERVER_CONFIG_ENABLED: "true"
       SERVER_CONFIG_URL: "http://configserver:8888"
