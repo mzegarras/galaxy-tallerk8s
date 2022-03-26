@@ -5,6 +5,7 @@
     dnf clean all
     sudo dnf swap centos-linux-repos centos-stream-repos
     sudo dnf update -y
+    sudo dnf install -y git
     ```
 
 1. Agregar Docker-CE repositorio
