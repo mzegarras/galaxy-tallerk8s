@@ -1,5 +1,9 @@
 1. Actualizar centos (opcional)
     ```bash
+    sudo sed -i -e "s|mirrorlist=|#mirrorlist=|g" /etc/yum.repos.d/CentOS-*
+    sudo sed -i -e "s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g" /etc/yum.repos.d/CentOS-*
+    dnf clean all
+    sudo dnf swap centos-linux-repos centos-stream-repos
     sudo dnf update -y
     ```
 
@@ -42,4 +46,16 @@
     sudo service docker restart
     systemctl is-active docker
     docker run hello-world
+    ```
+
+
+1. docker-compose
+https://docs.docker.com/compose/cli-command/
+
+    ```console
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.3.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+
     ```
