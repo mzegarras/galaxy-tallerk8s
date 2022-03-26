@@ -53,7 +53,7 @@
         -d mongo-express
     ```
 
-1. Wordpress
+## Wordpress
     ```
     docker run --name mysql01 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=Password1234 -d mysql
 
@@ -61,7 +61,7 @@
     ```
 
 
-1. Docker-compose 
+## Docker-compose 
 
 * [Official documentation](https://docs.docker.com/compose/compose-file/)
   
