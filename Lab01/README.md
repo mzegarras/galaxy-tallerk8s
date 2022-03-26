@@ -131,7 +131,7 @@
     ```    
 
 
-1. Docker-compose Mysql
+## Docker-compose Mysql
 
     * [restart](https://docs.docker.com/compose/compose-file/#restart)
     * restart: "no"
@@ -163,7 +163,7 @@
     ``` 
 
 
-1. Docker-compose wordpress - mysql
+## Docker-compose wordpress - mysql
 
 
     ```YAML
@@ -192,7 +192,7 @@
     ``` 
 
 
-1. Docker-compose Mongo
+## Docker-compose Mongo
 
     ```YAML
     version: '3.8'
@@ -212,7 +212,7 @@
 
   
   
-1. Docker-compose Mongo
+## Docker-compose Mongo
 
     ```YAML
     version: '3.8'
@@ -229,7 +229,7 @@
           MONGO_INITDB_DATABASE: interfaces
     ``` 
 
-1. Docker-compose Mongo - MongoExpress
+## Docker-compose Mongo - MongoExpress
 
     ```YAML
     version: '3.8'
