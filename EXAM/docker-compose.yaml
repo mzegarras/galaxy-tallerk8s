@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  backend:
+      image: mzegarra/apinode:1.0.0
+      container_name: backend
+      restart: always
+      # build: 
+      #   context: .
+      #   dockerfile: ./docker/Dockerfile
+      ports:
+        - 3000:3000
+      environment:
+        URL_DB: 'mongodb://mongo:27017/interfaces'
+        URL_DB_USER: root
+        URL_DB_PWD: "pwd123456!"
+      depends_on: 
+        - mongo
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: "pwd123456!"
+      MONGO_INITDB_DATABASE: interfaces
