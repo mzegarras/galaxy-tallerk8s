@@ -15,9 +15,9 @@
 1. Create el servicio de mongo con el nombre: db-apellido
     * Por ejemplo: db-zegarra, db-perez
     * Este servicio sólo debe estar disponible dentro del cluster
-1. Create el servicio de mongo con el nombre: backend-apellido
+1. Create el servicio de backend con el nombre: backend-apellido
     * Por ejemplo: backend-zegarra, backend-perez
-    * Este servicio sólo debe estar disponible desde cualquier parte del mundo
+    * Este servicio debe estar disponible desde cualquier parte del mundo
 1. Los siguientes valores deben estar en un configmaps y referenciarlos en el punto 1 y 2:  - Opcional
     * URL_DB: 'mongodb://mongo:27017/interfaces'
     * URL_DB_USER: root
