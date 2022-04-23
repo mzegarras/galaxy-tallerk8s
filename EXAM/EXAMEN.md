@@ -18,3 +18,8 @@
 1. Create el servicio de mongo con el nombre: backend-apellido
     * Por ejemplo: backend-zegarra, backend-perez
     * Este servicio sólo debe estar disponible desde cualquier parte del mundo
+1. Los siguientes valores deben estar en un configmaps y referenciarlos en el punto 1 y 2:
+    * URL_DB: 'mongodb://mongo:27017/interfaces'
+    * URL_DB_USER: root
+1. Los siguientes valores deben estar en un secreto  y referenciarlos en el punto 1 y 2:
+    * URL_DB_PWD: "pwd123456!"
